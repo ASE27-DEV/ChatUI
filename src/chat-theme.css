@@ -1,0 +1,36 @@
+/**
+ * ChatUI — Theme variables
+ *
+ * Override these variables on any ancestor of <Chat /> to customise the appearance.
+ *
+ * Usage (CSS):
+ *   .my-chatbot { --chat-navbar-bg: #e00034; }
+ *
+ * Usage (TypeScript prop):
+ *   <Chat theme={{ navbarBg: '#e00034' }} />
+ */
+
+.my-chatbot {
+  /* ─── Navbar ─────────────────────────────────── */
+  --chat-navbar-bg: #003598;       /* background of the header bar         */
+  --chat-navbar-color: #ffffff;    /* title and description text color      */
+
+  /* ─── Message list ───────────────────────────── */
+  --chat-message-list-bg: #e3f2fd; /* background of the messages area      */
+  --chat-message-meta-color: #666; /* color of the timestamp               */
+
+  /* ─── Bubbles ────────────────────────────────── */
+  --chat-bubble-bg: #ffffff;       /* background of bot bubbles            */
+  --chat-bubble-user-bg: #0096dc;  /* background of user bubbles           */
+  --chat-bubble-radius: 12px;      /* border radius of all bubbles         */
+
+  /* ─── Input area (footer) ────────────────────── */
+  --chat-footer-bg: #003598;       /* background of the input bar          */
+  --chat-input-color: #ffffff;     /* text color of the input field        */
+  --chat-input-placeholder-color: rgba(255, 255, 255, 0.6); /* placeholder */
+
+  /* ─── Send button ────────────────────────────── */
+  --chat-send-btn-bg: #ffffff;     /* background of the send button        */
+  --chat-send-btn-color: #003598;  /* text color of the send button        */
+  --chat-send-btn-radius: 6px;     /* border radius of the send button     */
+}
